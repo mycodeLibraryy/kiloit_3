@@ -1,3 +1,32 @@
+body {
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+a {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 .top-info {
-    justify-content: space-between !important;
+  letter-spacing: 1;
+}
+.text-green {
+  color: #26d48c !important;
+}
+
+.social {
+  color: #1842b6 !important;
+}
+#note {
+  line-height: 35px;
+}
+.nav-item {
+    font-size: 18px;
+}
+a.nav-link  {
+    color: #26d48c;
 }
