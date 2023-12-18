@@ -15,12 +15,12 @@
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/sharp-light.css" />
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -77,9 +77,9 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarMenu">
                             <ul class="navbar-nav ms-auto mx-xl-auto p-0">
-                                <li class="nav-item active" >
-                                    <a href="home.html" class="nav-link text-green" >Home</a>
-                                </li> 
+                                <li class="nav-item active">
+                                    <a href="home.html" class="nav-link text-green">Home</a>
+                                </li>
                                 <li class="nav-item">
                                     <a href="about.html" class="nav-link">About</a>
                                 </li>
