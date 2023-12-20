@@ -29,15 +29,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/js/counter.js"></script>
 </head>
 
 <body>
     <section class="header">
         <div id="top-header">
-            <div class="container-fluid bg-dark d-none d-md-flex">
+            <div class="container-fluid bg-dark d-md-flex">
                 <div class="container">
                     <div class="d-flex justify-content-between topbar">
-                        <div class="top-info d-flex align-items-center d-inline-block">
+                        <div class="top-info d-flex align-items-center">
                             <div class="me-2 location text-green">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <small class="text-white-50">23 Ranking Street, New York</small>
@@ -47,7 +50,7 @@
                                 <small class="text-white-50">info@example.com</small>
                             </div>
                         </div>
-                        <div class="text-green" id="note">
+                        <div class="text-green d-none" id="note">
                             <small>Note : We help you to Grow your business</small>
                         </div>
                         <div class="top-social">
@@ -68,19 +71,19 @@
                 </div>
             </div>
         </div>
-
         <div id="navbar">
-            <div class="container-fluid bg-primary d-none d-md-flex">
+            <div class="container-fluid bg-primary">
                 <div class="container">
-                    <nav class="navbar navbar-expand navbar-dark bg-primary">
+                    <nav class="navbar navbar-expand-lg navbar-dark py-0">
                         <a href="/" class="navbar-brand logo" title="logo">
                             <h1 class="text-white fw-bold">
                                 Kilo
                                 <span class="text-green" style="margin-right: 20px;">IT</span>
                             </h1>
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
-                            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                            aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarMenu">
@@ -129,13 +132,10 @@
                 <nav aria-label="breadcrumb animated slideInDown">
                     <ol class="breadcrumb justify-content-center mb-0">
                         <li class="breadcrumb-item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">Pages</a>
+                            <a href="/">Home</a>
                         </li>
                         <li class="breadcrumb-item" aria-current="page">
-                            <a href="#">Services</a>
+                            <a href="/pages/services/services.html">Services</a>
                         </li>
                     </ol>
                 </nav>
@@ -181,110 +181,124 @@
         </div>
     </div>
 
-    <div class="container-fluid py-5 my-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 fade-right" style="max-width: 600px;">
-                <h5 class="text-primary">
-                    Our Services
-                </h5>
-                <h1 class="mb-3">
-                    Services Built Specifically For Your Business
-                </h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <i class="fa fa-7x mb-4 fa-sharp fa-solid fa-code text-primary"></i>
-                                <h4 class="mb-3">Web Design</h4>
-                                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora quae
-                                    est
-                                    quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
-                                <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+    <section class="our-services">
+        <div class="container-fluid py-5 my-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5" style="max-width: 600px;" data-aos="fade-down">
+                    <h5 class="text-primary">
+                        Our Services
+                    </h5>
+                    <h1 class="mb-3">
+                        Services Built Specifically For Your Business
+                    </h1>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-left">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-7x mb-4 fa-sharp fa-solid fa-code text-primary"></i>
+                                    <h4 class="mb-3">Web Design</h4>
+                                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                        necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora
+                                        quae
+                                        est
+                                        quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
+                                    <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read
+                                        More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <i class="fa fa-7x mb-4 fa-sharp fa-solid fa-file-code text-primary"></i>
-                                <h4 class="mb-3">Web Development</h4>
-                                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora quae
-                                    est
-                                    quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
-                                <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-down">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-7x mb-4 fa-sharp fa-solid fa-file-code text-primary"></i>
+                                    <h4 class="mb-3">Web Development</h4>
+                                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                        necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora
+                                        quae
+                                        est
+                                        quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
+                                    <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read
+                                        More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <i class="fa fa-7x mb-4 fa-regular fa-arrow-up-right-from-square text-primary"></i>
-                                <h4 class="mb-3">UI/UX Design</h4>
-                                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora quae
-                                    est
-                                    quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
-                                <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-right">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-7x mb-4 fa-regular fa-arrow-up-right-from-square text-primary"></i>
+                                    <h4 class="mb-3">UI/UX Design</h4>
+                                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                        necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora
+                                        quae
+                                        est
+                                        quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
+                                    <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read
+                                        More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <i class="fa fa-7x mb-4 fa-duotone fa-user-secret text-primary"></i>
-                                <h4 class="mb-3">Web Security</h4>
-                                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora quae
-                                    est
-                                    quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
-                                <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-left">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-7x mb-4 fa-duotone fa-user-secret text-primary"></i>
+                                    <h4 class="mb-3">Web Security</h4>
+                                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                        necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora
+                                        quae
+                                        est
+                                        quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
+                                    <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read
+                                        More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <i class="fa fa-7x mb-4 fa-solid fa-envelope-open text-primary"></i>
-                                <h4 class="mb-3">Digital Marketing</h4>
-                                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora quae
-                                    est
-                                    quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
-                                <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-7x mb-4 fa-solid fa-envelope-open text-primary"></i>
+                                    <h4 class="mb-3">Digital Marketing</h4>
+                                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                        necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora
+                                        quae
+                                        est
+                                        quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
+                                    <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read
+                                        More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="services-item bg-light">
-                        <div class="p-4 text-center services-content">
-                            <div class="services-content-icon">
-                                <i class="fa fa-7x mb-4 fa-solid fa-laptop-mobile text-primary"></i>
-                                <h4 class="mb-3">Programming</h4>
-                                <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                                    necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora quae
-                                    est
-                                    quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
-                                <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-right">
+                        <div class="services-item bg-light">
+                            <div class="p-4 text-center services-content">
+                                <div class="services-content-icon">
+                                    <i class="fa fa-7x mb-4 fa-solid fa-laptop-mobile text-primary"></i>
+                                    <h4 class="mb-3">Programming</h4>
+                                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                                        necessitatibus asperiores cum numquam beatae. Iure soluta eos harum, tempora
+                                        quae
+                                        est
+                                        quaerat delectus, eaque cupiditate optio ratione veniam at dolorem!</p>
+                                    <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read
+                                        More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="footer">
         <div class="container-fluid footer bg-dark"
             style="visibility: visible, animation-delay: 0.3s, animation-name: fadeIn">
@@ -388,8 +402,11 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
