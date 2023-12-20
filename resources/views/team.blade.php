@@ -202,7 +202,6 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-
         </div>
     </div>
 @endsection
